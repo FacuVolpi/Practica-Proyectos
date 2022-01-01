@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono:wght@600&display=swap"
+        rel="stylesheet">
+    <title>Calculadora de Propinas</title>
+</head>
+
+<body>
+    <div id="bg-fullscreen">
+        <h1>Tip Calculator</h1>
+        <h3>Demasiado puesto para hacer la matematica?</h3>
+
+        <form action="#" name="form-calculadora" id="form-calc">
+            <div class="flex-container" id="container-inputs">
+                <label for="ticket">Ticket:</label>
+                <input type="tel" name="ticket" class="equal" id="ticket" minlength="1" tabindex="1"
+                    placeholder="Cuanto gastaste?" required>
+                <label for="propina">Propina:</label>
+                <input type="tel" name="propina" id="propina" class="equal" minlength="1" tabindex="2"
+                    placeholder="% de propina?" required>
+                <label for="personas">Personas:</label>
+                <input type="tel" name="personas" id="nro-personas" class="equal" minlength="1" tabindex="3"
+                    placeholder="Entre cuantas?" required>
+
+            </div>
+
+            <div class="flex-column">
+                <button type="submit" id="submit-btn">Calcular <i class="fas fa-check"></i></button>
+                <button id="clear-btn">Limpiar Campos <i class="fas fa-broom"></i></button>
+
+            </div>
+            <div class="center">
+                Total: <span id="t-ticket"></span>
+            </div>
+            <div class="center">
+                Solo Propina: <span id="solo-propina"></span>
+            </div>
+            <div class="center">
+                Total por Persona: <span id="x-persona"></span>
+            </div>
+    </div>
+    </form>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/9a85711c76.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

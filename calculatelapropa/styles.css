@@ -1,0 +1,144 @@
+:root {
+    --fontTitulo: 'Roboto Mono', monospace;
+    --fontApp: 'Nunito', sans-serif;
+    --colorPrimario: #bba79b;
+    --colorSecundario: #e2e0e2;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(./Imagenes/elliott-blair-lrage-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: var(--fontApp);
+    color: var(--colorSecundario);
+
+}
+
+
+
+h1,
+h3 {
+    margin: 0.5em auto;
+    font-family: var(--fontTitulo);
+    color: var(--colorPrimario);
+    text-align: center;
+}
+
+
+
+@media(min-width: 40rem) {
+
+    h1,
+    h3 {
+        text-transform: uppercase;
+        margin: 2.5rem auto;
+        color: var(--colorPrimario);
+
+    }
+}
+
+label {
+    margin: auto 0.5rem;
+    min-width: 20%;
+    text-align: center;
+
+}
+
+.equal {
+    margin: 0.3rem 0.3rem;
+    text-align: center;
+    min-width: 51%;
+
+
+}
+
+
+button {
+    padding-bottom: 0.4rem;
+    padding-top: 0.1rem;
+    height: 1.7rem;
+    min-width: 50%;
+    margin: 0.3rem 0.4rem;
+    text-align: center;
+    border-color: rgba(187, 187, 187, 0.849);
+    border-radius: 0.3em;
+    color: var(--colorSecundario);
+    font-weight: bold;
+    font-size: 0.870rem;
+    background-color: rgba(78, 78, 78, 0.76);
+
+}
+
+button>i {
+    font-size: 1.086rem;
+    text-align: center;
+    padding-left: 0.4em;
+    margin: auto;
+    color: turquoise;
+}
+
+
+
+#form-calc {
+
+    max-width: 40rem;
+    min-height: 25rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem auto;
+    max-width: 40rem;
+    justify-content: center;
+
+}
+
+@media (min-width: 40rem) {
+    .flex-container {
+        flex-direction: column;
+        max-width: 21rem;
+        min-width: 21rem;
+    }
+}
+
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.3rem auto;
+    max-width: 40rem;
+
+}
+
+.center {
+    max-width: 40rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#bg-fullscreen {
+    position: relative;
+    min-width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.55);
+}
