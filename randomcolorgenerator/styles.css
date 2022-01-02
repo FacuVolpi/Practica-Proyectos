@@ -77,6 +77,10 @@ li>a:hover {
     color: var(--link-color);
 }
 
+.test {
+    color: var(--link-color);
+}
+
 @media (min-width:80em) {
     h2 {
         font-size: 2.5rem;
