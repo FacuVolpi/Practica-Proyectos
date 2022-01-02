@@ -59,7 +59,7 @@ h2 {
 
 #nav-links {
     display: flex;
-    width: 45%;
+    width: 50%;
     max-width: 30rem;
     justify-content: space-between;
     align-items: center;
