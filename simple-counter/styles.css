@@ -1,0 +1,62 @@
+:root {
+    --color-titulo: rgb(120, 65, 121);
+    --ff-primaria: 'Balsamiq Sans', cursive;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    /*10px = 1rem, para calculo mas facil*/
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: 1.5;
+    font-family: var(--ff-primaria);
+}
+
+main {
+    text-align: center;
+    margin: 15em auto;
+}
+
+.titulo-contador {
+    font-family: var(--ff-primaria);
+    color: var(--color-titulo);
+    font-size: 2.5rem;
+}
+
+@media screen and (min-width: 43em) {
+
+    /*43em = 688px*/
+    .titulo-contador {
+        font-size: 3rem;
+    }
+}
+
+#cuenta {
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 43em) {
+    #cuenta {
+        font-size: 4.5rem;
+    }
+}
+
+.contenedor-btns {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 0.5em auto;
+}
+
+.btn {
+    width: 25%;
+    max-width: 35%;
+    margin: 1.5em 0.3em;
+}

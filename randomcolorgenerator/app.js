@@ -3,7 +3,7 @@ const colorText = document.getElementById("textColor"); //El span para agregar e
 const mainEl = document.querySelector(".background-display"); //Main section para cambiar el fondo de color.
 const rgbTabEl = document.querySelector('#rgbTab');
 //Escuchando por clicks en el boton.
-btnEl.addEventListener('click', function () {
+const rgbColorGen = btnEl.addEventListener('click', function () {
     //Asignando valores random a las variables para cada uno de los colores que representa RGB.
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
