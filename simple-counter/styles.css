@@ -29,9 +29,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 0.5em auto;
+    padding-bottom: 1em;
 }
 
 .titulo-contador {
@@ -70,6 +71,7 @@ main {
 }
 
 .btn {
+    min-width: 25%;
     width: 25%;
     max-width: 35%;
 }
