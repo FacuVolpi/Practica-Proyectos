@@ -45,6 +45,9 @@ h3 {
         color: var(--colorPrimario);
 
     }
+    .equal {
+        height: 2rem;
+    }
 }
 
 label {
@@ -58,8 +61,6 @@ label {
     margin: 0.3rem 0.3rem;
     text-align: center;
     min-width: 51%;
-
-
 }
 
 
