@@ -1,2 +1,2 @@
-# Practica-Projectos
+# Practica-Proyectos
 Practice projects
