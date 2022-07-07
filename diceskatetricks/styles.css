@@ -19,10 +19,12 @@ body {
     color: var(--clr-secundario);
     font-family: var(--font-general);
     overflow: hidden;
+    font-size: 1.2rem;
 }
 section {
     display: grid;
     place-items: center;
+   
 }
 
 .titulo {
@@ -65,11 +67,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: clamp(10rem, 50%, 15rem);
-    min-height: 5rem;
+    width: clamp(9rem, 50%, 15rem);
+    min-height: 5.5rem;
     border-style: dashed solid;
     border-radius: 5px;
-    font-size: 1.3em;
 }
 
 /* Delegando las areas*/
