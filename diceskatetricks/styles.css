@@ -1,0 +1,131 @@
+:root {
+    --clr-fondo: #070707d8;
+    --clr-titulo: rgb(212, 212, 212);
+    --clr-subtitulo: #ddb04f77;
+    --clr-secundario: #b69141;
+    --font-general: 'Roboto', sans-serif;
+}
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0.5rem 1.2rem;
+    background: var(--clr-fondo);
+    color: var(--clr-secundario);
+    font-family: var(--font-general);
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+section {
+    display: grid;
+    place-items: center;
+   
+}
+
+.titulo {
+    color: var(--clr-titulo);
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 0px;
+}
+
+.subtitulo {
+    color: var(--clr-subtitulo);
+}
+.contenedor {
+    display: flex;
+    width: clamp(20rem, 100%, 40rem);
+    height: 100%;
+    margin: 3rem auto;
+    justify-content: center;
+    align-items: center;
+}
+.tipo_prueba {
+    color: var(--clr-titulo);
+    margin-bottom: 2rem;
+}
+/*Setteado Template Areas*/
+.tricks_contenedor {
+    display: grid;
+    gap: 0.7rem;
+    place-items: center;
+    grid-template-areas: 
+    'stance fs-bs'
+    'postura direccion'
+    'cantidad-grados trick'
+    'grados prueba'
+    'conseguir-prueba conseguir-prueba';
+    width: 100%;
+}
+.tricks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(9rem, 50%, 15rem);
+    min-height: 5.5rem;
+    border-style: dashed solid;
+    border-radius: 5px;
+}
+
+/* Delegando las areas*/
+.postura {
+    grid-area: stance;
+}
+
+.direccion {
+    grid-area: fs-bs;
+}
+
+.lado {
+    grid-area: postura;
+}
+.giro {
+    grid-area: direccion
+}
+
+.rotacion {
+    grid-area: cantidad-grados;
+}
+
+.cant_grados {
+    grid-area: grados;
+}
+
+.prueba {
+    grid-area: trick;
+}
+
+.trick {
+    grid-area: prueba;
+}
+
+.fa4-butt {
+    grid-area: conseguir-prueba;
+    width: 60%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 4px;
+    transition: 0.4s all;
+    box-shadow: -2px 5px 16px 2px rgba(255,255,255,0.10);
+    background: var(--clr-secundario);
+}
+
+.fa4-butt:hover {
+    background: #fabd3b;
+}
+.fa4-butt:active {
+    transform: scale(0.95);
+    box-shadow: -6px 1px 10px 2px rgba(255,255,255,0.10);
+}
+
+.iconify {
+    color: white;
+    width: 35px;
+    height: 40px;
+}
