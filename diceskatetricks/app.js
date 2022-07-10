@@ -15,11 +15,7 @@ const tricksFlat = [
     'Varial Heel', 'Lazer Flip', 'Inward Heelflip', 'Hardflip',
     'Impossible', 'Ollie', 'Foward Flip'
 ];
-//Elementos nuevos?
-/*let newStance = document.createElement('p');
-let newDireccion = document.createElement('p');
-let newGrados = document.createElement('p');
-let newTrick = document.createElement('p');*/
+
 
 
 //Haciendo la funcion para randomizar los numeros
