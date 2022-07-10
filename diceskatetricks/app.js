@@ -5,6 +5,7 @@ const gradosRotacionElemento = document.querySelector('.rotacion');
 const trickElemento = document.querySelector('.prueba');
 const btnElemento = document.querySelector('.fa4-butt');
 
+
 //Listas de pruebas, posición, dirección de giro, grados de rotación
 const stance = ['Normal', 'Switch', 'Fakie', 'Nollie'];
 const direcciones = ['Backside', 'Frontside', '-'];
@@ -14,6 +15,12 @@ const tricksFlat = [
     'Varial Heel', 'Lazer Flip', 'Inward Heelflip', 'Hardflip',
     'Impossible', 'Ollie', 'Foward Flip'
 ];
+//Elementos nuevos?
+/*let newStance = document.createElement('p');
+let newDireccion = document.createElement('p');
+let newGrados = document.createElement('p');
+let newTrick = document.createElement('p');*/
+
 
 //Haciendo la funcion para randomizar los numeros
 function random(array) {
@@ -26,4 +33,4 @@ btnElemento.addEventListener('click', () => {
     direccionElemento.textContent = direcciones[random(direcciones)];
     gradosRotacionElemento.textContent = rotacion[random(rotacion)];
     trickElemento.textContent = tricksFlat[random(tricksFlat)];
-})
+});
