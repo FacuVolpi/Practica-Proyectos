@@ -19,13 +19,12 @@ body {
     color: var(--clr-secundario);
     font-family: var(--font-general);
     overflow: hidden;
-    font-size: 1.1rem;
-   
+    font-size: 1.2rem;
 }
- section {
-
-    text-align: center;
-
+section {
+    display: grid;
+    place-items: center;
+   
 }
 
 .titulo {
@@ -41,17 +40,17 @@ body {
 }
 .contenedor {
     display: flex;
-    width: clamp(20rem, 100%, 40rem);
+    width: clamp(15rem, 100%, 20rem);
     height: 100%;
+    margin: 3rem auto;
     justify-content: center;
     align-items: center;
 }
 .tipo_prueba {
     color: var(--clr-titulo);
     margin-bottom: 2rem;
-    width: 100%;
 }
-/*Setteado Template Areas*/
+/*Tricks display*/
 .tricks_contenedor {
     display: grid;
     margin: 3rem auto;
@@ -101,7 +100,7 @@ body {
     transition: 0.4s all;
     box-shadow: -2px 5px 16px 2px rgba(255,255,255,0.10);
     background: var(--clr-secundario);
-}*/
+}
 
 .fa4-butt:hover {
     background: #fabd3b;
@@ -116,4 +115,3 @@ body {
     width: 35px;
     height: 40px;
 }
-
